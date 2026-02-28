@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<style>
+	@font-face {
+		font-family: "Candara";
+		src: url("Candara.ttf");
+	} @font-face { 
+		font-family: "Diplomata";
+		src: url("Diplomata-Regular.ttf");
+	} body {
+		background-color: rgb(230, 243, 252);
+		margin: 0;
+	} #page {
+		width:1024px;
+		height:1224px;
+		background: #ECECEC;
+		border: 1px solid black;
+		box-shadow: 2px 3px 6px darkgray;
+		margin: 0 auto;
+	} h1 {
+		font-family: "Diplomata";
+		font-size: 55pt;
+		line-height: 1.4em;
+		text-align: center;
+		text-shadow: 1px 2px 3px darkgray;
+		margin: 24px 0 5px 0;
+	} .subtitle {
+		font-family: "Candara";
+		font-size: 22pt;
+		line-height: 1.4em;
+		text-align: center;
+		margin: 0 0 20px 0;
+		opacity: 0.7;
+	} .subtitle::after {
+		content: "";
+		display: block;
+		width: 100%;
+		max-width: 1024px;
+		height: 1px;
+		background: gray;
+		margin: 10px auto 40px auto;
+	}
+	} .gallery {
+		display: grid;
+		align-content: center;
+		grid-template-rows: repeat (4, 1fr);
+		gap: 20px;
+		width: 80%;
+		margin: 40px auto;
+	} .gallery figure {
+		background: white;
+		padding: 10px;
+		box-shadow: 1px 2px 5px darkblue;
+		text-align: center;
+		box-shadow: 1px 2px 5px lightgray;
+		border-radius: 6px;
+		overflow: hidden;
+	} .gallery img {
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+	} img:hover {
+		transform: scale(1.03);
+		transition: transform 0.5s;
+	} figcaption {
+		font-family: "Candara";
+		font-size: 12pt;
+		line-height: 1.4em;
+		margin-top: 3px;
+	}
+	</style>
+</head>
+<body>
+	<h1> PORTFOLIO </h1>
+	<p class="subtitle"> Jasmine Ruffy</p> 
+	<div class="gallery">
+		<figure>
+			<a href="table.html">
+				<img src="Film.jpg" />
+			</a>
+			<figcaption>
+			Film Sets
+			</figcaption>
+		</figure>
+		<figure>
+			<a href="Photography.jpg">
+				<img src="Photography.jpg" />
+			</a>
+			<figcaption>
+			Photography
+			</figcaption>
+		</figure>
+		<figure>
+			<a href="Graphic Design.jpg">
+				<img src="Graphic Design.jpg" />
+			</a>
+			<figcaption>
+			Graphic Design
+			</figcaption>
+		</figure>
+		<figure>
+			<a href="Art Works.jpg">
+				<img src="Art Works.jpg" />
+			</a>
+			<figcaption>
+			Art Works
+			</figcaption>
+		</figure>
+	</div>
+</body>
+</html>
